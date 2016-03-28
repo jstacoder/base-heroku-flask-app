@@ -1,6 +1,9 @@
 
-<div>
-    <ul>
+<div class="outer-nav">
+    <h2 class="nav-title">
+        <a href="/">{{ config['site_name'] | capitalize }}</a>
+    </h2>
+    <ul class="nav">
         {% for link in links %}
             <li class="nav-item"><a {% if link[2] %}class="active"{% endif %} href="{{ link[1] }}">{{ link[0] }}</a></li>
         {% endfor %}

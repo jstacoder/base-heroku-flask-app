@@ -1,7 +1,9 @@
 from flask import Flask, render_template
-
+import os
 
 app = Flask(__name__)
+
+app.config['site_name'] = os.environ.get('SITE_NAME','testing')
 
 links = [
     ['home','/',False],
