@@ -1,0 +1,6 @@
+{
+  "name": "basic heroku flask app",
+  "description": "A barebones flask app",
+  "repository": "https://github.com/jstacoder/basic-heroku-flask-app",
+  "keywords": ["python","flask", "static"]
+}

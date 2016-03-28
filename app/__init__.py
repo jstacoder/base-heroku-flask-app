@@ -3,17 +3,32 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+links = [
+    ['home','/',False],
+    ['about','/about',False],
+    ['contact','/contact',False]
+]
+
+def set_link(index):
+    for itm in links:
+        itm[2] = False
+    links[index][2] = True
+    
+
 @app.route('/')
 def index():
-    return render_template('index.html',links=[['home','/',True],['about','/about',False],['contact','/contact',False]],page_name='home')
+    set_link(0)
+    return render_template('index.html',links=links,page_name='home')
 
 
 
 @app.route('/about')
 def about():
-    return render_template('index.html',links=[['home','/',False],['about','/about',True],['contact','/contact',False]],page_name='about')
+    set_link(1)
+    return render_template('index.html',links=links,page_name='about')
 
 
 @app.route('/contact')
 def contact():
-    return render_template('index.html',links=[['home','/',False],['about','/about',False],['contact','/contact',True]],page_name='contact')
+    set_link(2)
+    return render_template('index.html',links=links,page_name='contact')

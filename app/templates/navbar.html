@@ -1,0 +1,8 @@
+
+<div>
+    <ul>
+        {% for link in links %}
+            <li class="nav-item"><a {% if link[2] %}class="active"{% endif %} href="{{ link[1] }}">{{ link[0] }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

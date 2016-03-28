@@ -1,23 +1,7 @@
-<style>
-    .nav-item {
-        display:inline-block;
-    }
-    .nav-item a.active{
-        color:red;
-    }
-    .nav-item a{
-        text-decoration:none;
-        padding:10px 10px;
-        border:1px solid black;        
-    }
-</style>
+{% extends 'base.html' %}
+{% block content %}
 
-<div>
-    <ul>
-        {% for link in links %}
-            <li class="nav-item"><a {% if link[2] %}class="active"{% endif %} href="{{ link[1] }}">{{ link[0] }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
+<h2>{{ page_name | capitalize }} Page</h2>
 
-<h2>{{ page_name }}</h2>
+{% endblock %}
+
