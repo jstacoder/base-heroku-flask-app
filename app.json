@@ -2,5 +2,6 @@
   "name": "basic heroku flask app",
   "description": "A barebones flask app",
   "repository": "https://github.com/jstacoder/basic-heroku-flask-app",
-  "keywords": ["python","flask", "static"]
+  "keywords": ["python","flask", "static"],
+  "logo":"http://flask.pocoo.org/docs/dev/_static/flask.png"
 }
