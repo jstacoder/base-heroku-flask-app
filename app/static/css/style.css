@@ -1,4 +1,4 @@
-div.outer-nav {
+/*div.outer-nav {
     border:1px solid grey;
 }
 ul.nav {
@@ -36,4 +36,7 @@ h2.nav-title a {
     padding:28px 10px 21px 10px;
     margin-left:-5px;
     border:1px solid black;        
+*/
+li.nav-item a.active {
+    color:white;
 }
