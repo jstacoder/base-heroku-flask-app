@@ -7,6 +7,24 @@
   "env":{
     "SITE_NAME":{
         "description":"The name of your base site"
+    },
+    "ADDRESS_STREET":{
+        "description":"your street address for your contact us page"
+    },
+    "ADDRESS_CITY": {
+        "description":"your city"
+    },
+    "ADDRESS_STATE":{
+        "description":"your state"
+    },
+    "ADDRESS_ZIP":{
+        "description":"your zipcode"
+    },
+    "CONTACT_PHONE":{
+        "description":"phone number for contact page"
+    },
+    "CONTACT_EMAIL":{
+        "description":"email address for contact page"
     }
   }
 }
